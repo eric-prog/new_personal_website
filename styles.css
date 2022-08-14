@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+.wrapper-1 {
+    margin-top: 10vh;
+    margin-bottom: 13vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    width: 65vh;
+    font-family: 'Source Sans Pro', serif;
+}
+.current {
+    line-height: 4vh;
+}
+.status {
+    font-style: italic;
+}
+.block {
+    width: fit-content;
+}
+.block-title {
+    font-size: 1.5em;
+}
+.block-exp {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img {
+    height: 3.5vh;
+    width: auto;
+    margin-right: 4vh;
+}
+.exp-link {
+    color: black;
+}
+.exp-title {
+    font-weight: 400;
+    font-size: 1.14em;
+    padding: 0;
+    margin: 0;
+}
+.exp-team {
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5vh;
+}
+.contacts {
+    width: 100%;
+}
+.link {
+    color: black;
+}
+.link-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.circle {
+    height: 6vh;
+    width: auto;
+}
+.waterloo {
+    height: 12vh;
+    width: auto;
+}
+.tohacks {
+    height: 10vh;
+    width: auto;
+}
+.studye {
+    height: 9vh;
+    width: auto;
+}
+.hack-title {
+    font-weight: 400;
+}
+.face {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    border: 1px solid rgb(215, 215, 215);
+}
+.exp-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hack3 {
+    height: 7vh;
+    width: auto;
+}
+.kurius {
+    height: 8vh;
+    width: auto;
+}
+.titles {
+    font-size: 1.1em;
+}
+.current {
+    font-size: 1.1em;
+}
+.tedx {
+    margin-right: 3vh;
+}
+.navbar {
+    margin-bottom: 3vh;
+}
+.navbar-li {
+    color: black;
+}
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+    .img {
+        margin-bottom: 2vh;
+    }
+    .link {
+        margin-right: 2vh;
+        margin-bottom: 2vh;
+    }
+    .navbar {
+        justify-content: flex-start;
+    }
+    .navbar-li {
+        margin-right: 2vh;
+        margin-bottom: 2vh;
+    }
+}
