@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600&display=swap');
+
+
 html {
     scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(236, 234, 227);
+    color: rgb(26, 26, 26);
+}
+.name {
+    font-size: 3.5em;
 }
 .wrapper-1 {
     margin-top: 10vh;
@@ -16,6 +20,7 @@ html {
     align-items: center;
     justify-content: center;
     width: 100%;
+    font-family: 'Golos Text', sans-serif;
 }
 .wrapper {
     display: flex;
@@ -23,7 +28,6 @@ html {
     text-align: left;
     align-items: left;
     width: 65vh;
-    font-family: 'Source Sans Pro', serif;
 }
 .current {
     line-height: 4vh;
@@ -32,10 +36,20 @@ html {
     font-style: italic;
 }
 .block {
-    width: fit-content;
+    width: 100%;
+}
+.email {
+    color: rgb(198, 142, 12);
+    font-style: italic;
 }
 .block-title {
-    font-size: 1.5em;
+    font-size: 2.5em;
+    width: 100%;
+    padding: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    border-radius: 12px;
+    background-color: rgb(225, 224, 217);
 }
 .block-exp {
     margin-top: 2vh;
@@ -49,8 +63,16 @@ html {
     width: auto;
     margin-right: 4vh;
 }
+.harvard {
+    margin-left: 1vh;
+    margin-right: 5vh;
+}
+.totazi {
+    margin-left: 1vh;
+}
 .exp-link {
-    color: black;
+    color: rgb(10, 108, 160);
+    text-decoration: none;
 }
 .exp-title {
     font-weight: 400;
@@ -66,27 +88,39 @@ html {
 .contacts {
     width: 100%;
 }
-.link {
+/* .link {
     color: black;
-}
+} */
 .link-container {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.contact-icon {
+    width: 5vh;
+    height: auto;
+}
+.rotate-right {
+    animation: rotate 4s linear infinite
+}
+.rotate-left {
+    animation: rotate-left 4s linear infinite;
+}
 .circle {
-    height: 6vh;
-    width: auto;
+    width: 6vh;
+    height: auto;
 }
 .waterloo {
-    height: 12vh;
-    width: auto;
+    width: 8vh;
+    height: auto;
 }
 .tohacks {
-    height: 10vh;
-    width: auto;
+    width: 8vh;
+    height: auto;
+    margin-right: 3vh;
 }
 .studye {
     height: 7vh;
@@ -99,7 +133,7 @@ html {
     width: 20vh;
     height: 20vh;
     border-radius: 50%;
-    border: 1px solid rgb(215, 215, 215);
+    border: 3px solid rgb(38, 38, 38);
 }
 .exp-logos {
     display: flex;
@@ -125,9 +159,81 @@ html {
 }
 .navbar {
     margin-bottom: 3vh;
+    width: 100%;
+}
+.wave-animate {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;      
+    animation-iteration-count: infinite;  
+    display: inline-block;
 }
 .navbar-li {
     color: black;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+} 
+.navbar-li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 0px;
+    background-color: #1e1e1e;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.navbar-li:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.copyright {
+    margin-top: 10vh;
+}
+
+@-moz-keyframes rotate { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes rotate { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes rotate { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+@-moz-keyframes rotate-left { 
+    100% { -moz-transform: rotate(-360deg); } 
+}
+@-webkit-keyframes rotate-left { 
+    100% { -webkit-transform: rotate(-360deg); } 
+}
+@keyframes rotate-left { 
+    100% { 
+        -webkit-transform: rotate(-360deg); 
+        transform:rotate(-360deg); 
+    } 
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) } 
+  100% { transform: rotate( 0.0deg) }
+}
+.MouseTrail {
+    position: absolute;
+    height: 5px; width: 5px;
+    background: rgb(30, 30, 30);
 }
 @media only screen and (max-width: 768px) {
     .wrapper {
