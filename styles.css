@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     text-align: left;
     align-items: left;
-    width: 65vh;
+    width: 70vh;
 }
 .current {
     line-height: 4vh;
@@ -36,7 +36,10 @@ body {
     font-style: italic;
 }
 .block {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
 }
 .email {
     color: rgb(198, 142, 12);
@@ -84,9 +87,6 @@ body {
     padding: 0;
     margin: 0;
     margin-top: 0.5vh;
-}
-.contacts {
-    width: 100%;
 }
 /* .link {
     color: black;
@@ -222,18 +222,13 @@ body {
 
 @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) } 
-  100% { transform: rotate( 0.0deg) }
-}
-.MouseTrail {
-    position: absolute;
-    height: 5px; width: 5px;
-    background: rgb(30, 30, 30);
+    10% { transform: rotate(14.0deg) }  
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) } 
+    100% { transform: rotate( 0.0deg) }
 }
 @media only screen and (max-width: 768px) {
     .wrapper {
@@ -258,5 +253,11 @@ body {
     }
     .exp-logos {
         flex-wrap: wrap;
+    }
+    .block-title {
+        width: 90%;
+    }
+    .link-container {
+        width: 100%;
     }
 }
