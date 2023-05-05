@@ -134,6 +134,7 @@ body {
     height: 20vh;
     border-radius: 50%;
     border: 3px solid rgb(38, 38, 38);
+    object-fit: cover;
 }
 .exp-logos {
     display: flex;
