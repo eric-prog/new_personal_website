@@ -66,6 +66,10 @@ body {
     width: auto;
     margin-right: 4vh;
 }
+.descope {
+    height: 8vh;
+    border-radius: 100%;
+}
 .harvard {
     margin-left: 1vh;
     margin-right: 5vh;
